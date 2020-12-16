@@ -61,15 +61,33 @@ class item{
 
 }
 function check(){
-    if(inputValue.value ==""){
-        alert("Please input Todo's")
-    }
-    else{
-        new item(inputValue.value)
-        inputValue.value="";
+    for (var i=0, len = inputValue.value.length; i<len; ++i) {
+       
 
 
+
+         
+
+
+
+      if (inputValue.value.charAt(i) == ' ') {
+            alert('Name cannot have spaces!');
+            inputValue.value="";
+            break;
+        }
+         
+        
+        else{
+             
+            new item(inputValue.value)
+            inputValue.value="";
+            break;
+    
+    
+        }
     }
+
+   
 }
 
  addButton.addEventListener('click',check);
