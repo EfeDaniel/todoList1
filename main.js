@@ -62,15 +62,8 @@ class item{
 }
 function check(){
     for (var i=0, len = inputValue.value.length; i<len; ++i) {
-       
-
-
-
-         
-
-
-
-      if (inputValue.value.charAt(i) == ' ') {
+      
+       if (inputValue.value.charAt(i) == ' ') {
             alert('Name cannot have spaces!');
             inputValue.value="";
             break;
