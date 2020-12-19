@@ -24,9 +24,9 @@ class item{
      itemBox.classList.add('item');
 
 
-     let editButton =  document.createElement('button');
+     /* let editButton =  document.createElement('button');
      editButton.innerHTML="EDIT";
-     editButton.classList.add('editButton');
+     editButton.classList.add('editButton'); */
 
 
 
@@ -39,20 +39,23 @@ class item{
      container.appendChild(itemBox);
 
      itemBox.appendChild(input);
-     itemBox.appendChild(editButton);
+     //itemBox.appendChild(editButton);
      itemBox.appendChild(removeButton);
 
 
-     editButton.addEventListener('click',() => this.edit(input));
+    /*  editButton.addEventListener('click',() => this.edit(input)
+     
+       ); */
 
      removeButton.addEventListener('click',() => this.remove(itemBox));
      
 
    }
 
-   edit(input){
+  /*  edit(input){
+    
     input.disabled= !input.disabled;
-   }
+   } */
 
 
    remove(item){
